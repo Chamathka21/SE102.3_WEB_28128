@@ -1,0 +1,129 @@
+<html>
+<head>
+<title>NSBM</title>
+<style>
+div
+{
+background-color:rgba(255,255,255,0.5) ;
+width: 400px; 
+height: 400px;
+margin: 60px; 
+}
+ body
+{
+background-image: url(r.jpg);
+}
+.a
+{
+background-color:rosybrown;
+}
+.b
+{
+background-color:darkcyan;
+}
+.f
+{
+background-color: aquamarine;
+width: 390px;
+}
+.g
+{
+background-color: aquamarine;
+width: 390px;
+height: 12px;
+}
+</style>
+</head>
+<body >
+<center><div>
+<table class="f">
+<tr>
+<td> <center><h1>Sign Up</h1></center></td>
+</tr>
+</table>
+<form>
+<center><table></center>
+<tr>
+<td>First Name</td>
+<td><input placeholder="Enter First Name"></td>
+</tr>
+<tr>
+<td>Last Name</td>
+<td><input placeholder="Enter Last Name"></td>
+</tr>
+<tr>
+<td>Date Of Birth</td>
+<td>
+<select>
+<option value="0">Date</option>
+<option value="1">01</option>
+<option value="2">02</option>
+<option value="3">03</option>
+</select>
+<select>
+<option value="0">Month</option>
+<option value="1">01</option>
+<option value="2">02</option>
+<option value="3">03</option>
+</select>
+<select>
+<option value="0">Year</option>
+<option value="1">2003</option>
+<option value="2">2002</option>
+<option value="3">2001</option>
+</select>
+</td>
+</tr>
+<tr>
+<td>Gender</td>
+<td>
+<input type="radio" name="gen" value="F">Female
+<input type="radio" name="gen" value="M">Male
+</td>
+</tr>
+<tr>
+<td>Country</td>
+<td>
+<select>
+<option value="0">Country</option>
+<option value="1">Sri lanka</option>
+<option value="2">Canada</option>
+<option value="3">Australia</option>
+</select>
+</td>
+</tr>
+<tr>
+<td>Email</td>
+<td><input placeholder="Enter Email"></td>
+</tr>
+<tr>
+<td>Phone</td>
+<td><input placeholder="Enter phone"></td>
+</tr>
+<tr>
+<td>Password</td>
+<td><input type="password"></td>
+</tr>
+<tr>
+<td>Confirm Password</td>
+<td><input type="password"></td>
+</tr>
+<tr>
+<td><input type="checkbox">I agree to the terms of 
+use</td>
+</tr><br>
+</table>
+<table class="g">
+<tr>
+<td>
+<input class="a" type="Submit" name="submit"
+value="submit">
+<input class="b" type="reset" name="cancel"
+value="cancel">
+</td>
+</tr><br>
+</table>
+</form>
+</div></center>
+</body>
+</html

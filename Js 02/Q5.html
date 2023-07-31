@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Change Table Border</title>
+  <style>
+    table {
+      border-collapse: collapse;
+      border: 1px solid black; /* Default border */
+    }
+  </style>
+</head>
+<body>
+  <h1>Change Table Border</h1>
+  <table id="myTable">
+    <tr>
+      <th>Student ID</th>
+      <th>Name</th>
+      <th>Degree</th>
+    </tr>
+    <tr>
+      <td>001</td>
+      <td>Kamal</td>
+      <td>SE</td>
+    </tr>
+    <tr>
+      <td>002</td>
+      <td>Nimal 5</td>
+      <td>MIS</td>
+    </tr>
+  </table>
+  <br>
+  <label for="borderWidth">Border Width:</label>
+  <input type="number" id="borderWidth" value="1">
+  <label for="borderStyle">Border Style:</label>
+  <select id="borderStyle">
+    <option value="none">None</option>
+    <option value="solid">Solid</option>
+    <option value="dashed">Dashed</option>
+    <option value="dotted">Dotted</option>
+    <option value="double">Double</option>
+  </select>
+  <button onclick="changeTableBorder()">Apply Border</button>
+
+  <script>
+    function changeTableBorder() {
+      const table = document.getElementById("myTable");
+      const borderWidth = document.getElementById("borderWidth").value + "px";
+      const borderStyle = document.getElementById("borderStyle").value;
+
+      table.style.border = `${borderWidth} ${borderStyle}`;
+    }
+  </script>
+</body>
+</html>

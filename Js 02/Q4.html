@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Remove Items from Dropdown List</title>
+</head>
+<body>
+  <h1>Dropdown List</h1>
+  <select id="dropdown">
+    <option value="item1">Apple</option>
+    <option value="item2">Orange</option>
+    <option value="item3">Pineapple</option>
+    <option value="item4">Grapes</option>
+  </select>
+  <br><br>
+  <button onclick="removeSelectedItem()">Remove Selected Item</button>
+  <button onclick="removeAllItems()">Remove All Items</button>
+
+  <script>
+    // Function to remove the selected item from the dropdown list
+    function removeSelectedItem() {
+      const dropdown = document.getElementById("dropdown");
+      const selectedIndex = dropdown.selectedIndex;
+      
+      if (selectedIndex !== -1) {
+        dropdown.remove(selectedIndex);
+      } else {
+        alert("No item selected!");
+      }
+    }
+
+    // Function to remove all items from the dropdown list
+    function removeAllItems() {
+      const dropdown = document.getElementById("dropdown");
+      dropdown.innerHTML = ''; // Clearing the HTML content removes all options
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Enable/Disable Video on Mouse Hover</title>
+</head>
+<body>
+  <h1>Hover over the video to play</h1>
+  <video id="myVideo" width="640" height="360" controls>
+    <source src="ab.mp4.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+  <script>
+    const video = document.getElementById("myVideo");
+
+    // Function to play the video on mouse over
+    function playVideo() {
+      video.play();
+    }
+
+    // Function to pause the video when the mouse leaves the video element
+    function pauseVideo() {
+      video.pause();
+    }
+
+    // Attach event listeners to the video element
+    video.addEventListener("mouseover", playVideo);
+    video.addEventListener("mouseout", pauseVideo);
+  </script>
+</body>
+</html>

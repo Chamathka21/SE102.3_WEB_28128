@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Add Rows to Table</title>
+  <style>
+    table {
+      border-collapse: collapse;
+      border: 1px solid black;
+    }
+    th, td {
+      border: 1px solid black;
+      padding: 8px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Add Rows to Table</h1>
+  <table id="myTable">
+    <thead>
+      <tr>
+        <th>Header 1</th>
+        <th>Header 2</th>
+        <th>Header 3</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Cell 1</td>
+        <td>Cell 2</td>
+        <td>Cell 3</td>
+      </tr>
+      <tr>
+        <td>Cell 4</td>
+        <td>Cell 5</td>
+        <td>Cell 6</td>
+      </tr>
+    </tbody>
+  </table>
+  <br>
+  <button onclick="addRow()">Add Row</button>
+
+  <script>
+    function addRow() {
+      const table = document.getElementById("myTable");
+      const tbody = table.getElementsByTagName("tbody")[0];
+
+      const newRow = document.createElement("tr");
+      const cell1 = document.createElement("td");
+      const cell2 = document.createElement("td");
+      const cell3 = document.createElement("td");
+
+      cell1.textContent = "New Cell 1";
+      cell2.textContent = "New Cell 2";
+      cell3.textContent = "New Cell 3";
+
+      newRow.appendChild(cell1);
+      newRow.appendChild(cell2);
+      newRow.appendChild(cell3);
+
+      tbody.appendChild(newRow);
+    }
+  </script>
+</body>
+</html>
